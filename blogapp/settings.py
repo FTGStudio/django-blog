@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'blogdb',
         'USER': 'root',
-        'PASSWORD': 'ArynDoran', 
+        'PASSWORD': 'ArynDoran',
     }
 }
 
