@@ -71,6 +71,7 @@ TEMPLATES = [
 
 TEMPLATE_DIRS = (
     os.path.join(SETTINGS_PATH, 'templates'),
+    '/var/www/blogapp/templates/',
 )
 
 WSGI_APPLICATION = 'blogapp.wsgi.application'
