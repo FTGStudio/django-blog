@@ -71,10 +71,6 @@ TEMPLATES = [
     },
 ]
 
-TEMPLATE_DIRS = (
-    PROJECT_ROOT +"/template"
-)
-
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.load_template_source',
     'django.template.loaders.app_directories.load_template_source',
