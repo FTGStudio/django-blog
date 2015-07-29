@@ -6,6 +6,7 @@ import traceback
 import sys
 from django.views.generic.base import TemplateView
 
+
 class HomePageView(TemplateView):
     try:
         template_name = "home/index.html"
