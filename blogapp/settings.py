@@ -111,4 +111,5 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     '/var/www/blogapp/static/',
+    '/home/mike/django-blog/static/'
 )
