@@ -35,7 +35,7 @@ def add_post(request):
         post.author = request.user
         post.save()
         return redirect(post)
-    return render_to_response('blog/add_post.html',
+    return render_to_response('home/add_post.html',
                               { 'form': form },
                               context_instance=RequestContext(request))
 
@@ -53,7 +53,7 @@ def view_post(request, slug):
     form.initial['name'] = request.session.get('name')
     form.initial['email'] = request.session.get('email')
     form.initial['website'] = request.session.get('website')
-    return render_to_response('blog/blog_post.html',
+    return render_to_response('home/blog_post.html',
                               {
                                   'post': post,
                                   'form': form,
