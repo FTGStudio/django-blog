@@ -25,7 +25,9 @@ urlpatterns = [
     url(r'^$', HomePageView.as_view(), name='home'),
     url(r'^accounts/login/$', auth_views.login),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^blog/', add_post, name='blog')
+    url(r'^blog/', add_post, name='blog'),
+    url(r'^portfolio/', add_post, name='portfolio'),
+    url(r'^about/', add_post, name='about'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
